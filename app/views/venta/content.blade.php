@@ -253,7 +253,7 @@
 		$("#Efectivo").val(total - quitarSubtotal);
 	}
 //obtiene las categorias de los productos
-	var url='http://{{$_SERVER["SERVER_NAME"]}}/puntoDeVenta/categoriasDeProductos.json/todos';
+	var url='http://{{$_SERVER["SERVER_NAME"]}}/simplePOS/categoriasDeProductos.json/todos';
 	var categorias;
 	$.ajax({
 		url: url,

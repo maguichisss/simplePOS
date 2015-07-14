@@ -42,7 +42,7 @@
 
 	$('#cmbProveedores').change(function(){
 
-    	var url='http://{{$_SERVER["SERVER_NAME"]}}/puntoDeVenta/proveedores.json/'
+    	var url='http://{{$_SERVER["SERVER_NAME"]}}/simplePOS/proveedores.json/'
     				+ $('#cmbProveedores').val();
 		$.getJSON(url, datosPro);
 	});
@@ -50,7 +50,7 @@
 
 	$('#cmbProveedores').keypress(function(e){
 
-		var url='http://{{$_SERVER["SERVER_NAME"]}}/puntoDeVenta/proveedores.json/'
+		var url='http://{{$_SERVER["SERVER_NAME"]}}/simplePOS/proveedores.json/'
     				+ $('#cmbProveedores').val();
         if(e.keyCode == 13)
         	$.getJSON(url, datosPro);
@@ -90,7 +90,7 @@
 
 			$('#divTblCompraProductos').show();
 
-			var url='http://{{$_SERVER["SERVER_NAME"]}}/puntoDeVenta/categoriasDeProductos.json/todos';
+			var url='http://{{$_SERVER["SERVER_NAME"]}}/simplePOS/categoriasDeProductos.json/todos';
 			var categoriasSelect = '';
 			$.getJSON(url, function datos(d){
 				categoriasSelect='<select name="categoriaC[]" class ="form-control" disabled>';

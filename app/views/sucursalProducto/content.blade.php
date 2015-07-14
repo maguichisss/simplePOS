@@ -47,7 +47,7 @@
 	$('#btnNuevoProducto').on("click", function(){
 		$('#divTblNuevosProductos').show();
 
-		var url='http://localhost/puntoDeVenta/categoriasDeProductos.json/todos';
+		var url='http://localhost/simplePOS/categoriasDeProductos.json/todos';
 		var categoriasSelect = '';
 		$.getJSON(url, function datos(d){
 			categoriasSelect='<select name="categoriaN[]" class ="form-control">';
